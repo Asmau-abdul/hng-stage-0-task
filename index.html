@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Profile Card</title>
+    </head>
+    <body>
+        <main>
+            <article data-testid="test-profile-card">
+                <section class="first-section">
+                    <figure id="profile-image" class="item1">
+                        <img src="WhatsApp Image 2025-10-18 at 17.03.17.jpeg" alt="profile image" data-testid="test-user-avatar">
+                    </figure>
+                    
+                    <section id="user-bio" class="item2">
+                        <h2 data-testid="test-user-name">Asma'u Abdullahi</h2>
+                        <p class="role">FRONTEND DEVELOPER</p>
+                        <p data-testid="test-user-bio">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Voluptatum inventore animi libero pariatur ea blanditiis
+                        </p>
+                    </section>
+                </section>
+                
+                <section id="user-social-links">
+                    <p data-testid="test-user-time" id="user-time">WAT in milliseconds</p>
+                    <h3>Social</h3>
+                    <ul data-testid="test-profile-social-links">
+                        <li><a href="https://x.com/asmau_abdull" target="_blank" rel="noopener noreferrer" data-testid="test-profile-social-twitter">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/asma-u-abdullahi-012895171/" target="_blank" rel="noopener noreferrer" data-testid="test-profile-social-linkedin">Linkedin</a></li>
+                        <li><a href="https://github.com/Asmau-abdul" target="_blank" rel="noopener noreferrer" data-testid="test-profile-social-github">GitHub</a></li>
+                    </ul>
+                </section>
+
+                <section class="first-section">
+                    <section id="user-hobbies">
+                        <h3>Hobbies</h3>
+                        <ul data-testid="test-user-hobbies">
+                            <li>Reading</li>
+                            <li>Baking</li>
+                            <li>Crotcheting</li>
+                        </ul>
+                    </section>
+
+                    <section id="user-dislikes">
+                        <h3>Dislikes</h3>
+                        <ul data-testid="test-user-dislikes">
+                            <li>Dishonesty</li>
+                            <li>Noise</li>
+                            <li>Procastination</li>
+                        </ul>
+                    </section>
+                </section>
+            </article>
+        </main>
+
+        <script src="app.js"></script>
+    </body>
+</html>
