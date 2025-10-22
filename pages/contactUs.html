@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <img src="/images/menu_icon.svg" alt="menu icon" class="menuIcon">
+            <img src="/images/left_arrow_icon.svg" alt="left arrow icon" height="30px" width="30px" class="leftArrowIcon">
+            <div class="navMenu">
+                <a href="../index.html">Home</a>
+                <a href="/pages/aboutMe.html">About</a>
+                <a href="/pages/contactUs.html">Contact</a>
+            </div>
+        </nav>
+        <h3 class="successMessage" data-testid="test-contact-success"
+        style="text-align: center;"></h3>
+        <form action="" class="contactForm">
+            <div>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" data-testid="test-contact-name" aria-describedby="nameError" required>
+                <span id="fullnameError" data-testid="test-contact-error-name"></span>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" id="" data-testid="test-contact-email" aria-describedby="emailError" required>
+                <span id="emailError" data-testid="test-contact-error-email"></span>
+            </div>
+
+            <div>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" id="" data-testid="test-contact-subject" aria-describedby="subjectError" required>
+                <span id="subjectError" data-testid="test-contact-error-subject"></span>
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" data-testid="test-contact-message" aria-describedby="messageError" required></textarea> 
+                <span id="messageError" data-testid="test-contact-error-message"></span>
+            </div>
+
+            <div>
+                <button data-testid="test-contact-submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="/scripts/contactUs.js"></script>
+</body>
+</html>

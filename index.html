@@ -3,15 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/styles/style.css">
         <title>Profile Card</title>
     </head>
     <body>
         <main>
-            <article data-testid="test-profile-card">
+            <nav>
+                <img src="/images/menu_icon.svg" alt="menu icon" class="menuIcon">
+                <img src="/images/left_arrow_icon.svg" alt="left arrow icon" height="30px" width="30px" class="leftArrowIcon">
+                <div class="navMenu">
+                    <a href="index.html">Home</a>
+                    <a href="/pages/aboutMe.html">About</a>
+                    <a href="/pages/contactUs.html">Contact</a>
+                </div>
+            </nav>
+            <article data-testid="test-profile-card" class="homePageArticle">
                 <section class="first-section">
                     <figure id="profile-image" class="item1">
-                        <img src="WhatsApp Image 2025-10-18 at 17.03.17.jpeg" alt="profile image" data-testid="test-user-avatar">
+                        <img src="/images/avatar.jpeg" alt="profile image" class="avatar" data-testid="test-user-avatar">
                     </figure>
                     
                     <section id="user-bio" class="item2">
@@ -56,6 +65,6 @@
             </article>
         </main>
 
-        <script src="app.js"></script>
+        <script src="/scripts/app.js"></script>
     </body>
 </html>
